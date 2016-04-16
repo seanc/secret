@@ -85,7 +85,7 @@
             match: /`(.+)`/g,
             replace: '<pre><code>$1</code></pre>'
           }, {
-            match: /~~(.+)~~/g,
+            match: /~(.+)~/g,
             replace: '<s class="parser">$1</s>'
           }, {
             match: /(https?:\/\/([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/ig,
