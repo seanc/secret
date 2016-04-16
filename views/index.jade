@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Secret &ndash; Anonymous Chat
+  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Inconsolata:400,700")
+  link(rel="stylesheet", href="/stylesheets/style.css")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+  script(src="http://cdn.peerjs.com/0.3/peer.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.2/chance.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js")
+  script(src="/javascripts/main.js")
+body
+  .app-bar
+    p.client-name 
+    p.peer-count
+  .app-messages
+  form.app-input
+    input.input-field(type="text", placeholder="Enter a message...", maxlength="500")

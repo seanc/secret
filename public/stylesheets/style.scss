@@ -1,0 +1,113 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Inconsolata', serif;
+  overflow-x: hidden;
+}
+
+.app-bar {
+  height: 80px;
+  line-height: 80px;
+  box-sizing: border-box;
+  padding: 0 35px;
+  color: #ddd;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  z-index: 666;
+  width: 100%;
+  background-color: #000;
+  
+  .client-name,
+  .peer-count {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .peer-count {
+    float: right;
+  }
+}
+
+.app-messages {
+  color: #ddd;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 35px;
+  transform: translateY(60px);
+  padding-bottom: 60px;
+  
+  .app-message {
+    min-height: 35px;
+    line-height: 35px;
+    
+    .time,
+    .peer-name,
+    .peer-message {
+      display: inline-block;
+    }
+    
+    .time {
+      color: darken(#ddd, 25%);
+      margin-right: 10px;
+      vertical-align: top;
+    }
+    
+    .peer-name {
+      margin-right: 10px;
+      font-weight: 700;
+      vertical-align: top;
+      cursor: pointer;
+      
+      &:after {
+        content: ':'
+      }
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    .peer-message {
+      word-wrap: break-word;
+      
+      > a {
+        color: #27ae60;
+        text-decoration: none;
+        font-size: 14px;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.app-input {
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  line-height: 0px;
+  background-color: #000;
+  z-index: 666;
+  width: 100%;
+  
+  .input-field {
+    background: none;
+    outline: none;
+    border: none;
+    height: 100%;
+    border-top: 1px solid #ddd;
+    padding: 0 35px;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', serif;  
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+  }
+}
