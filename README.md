@@ -3,12 +3,9 @@
 
 ## Installation
 ```shell
-$ npm install secret
-```
-
-## Usage
-```javascript
-import secret from 'secret';
+$ git clone && cd
+$ npm install
+$ npm start
 ```
 
 ## Credits
